@@ -34,15 +34,15 @@
             color: white;
         } */
 
-.notification .badge {
-  position: absolute;
-  top: -7px;
-  right: -7px;
-  padding: 5px 10px;
-  border-radius: 50%;
-  background: red;
-  color: white;
-}
+        .notification .badge {
+            position: absolute;
+            top: -7px;
+            right: -7px;
+            padding: 5px 10px;
+            border-radius: 50%;
+            background: red;
+            color: white;
+        }
         .bt {
             position: relative;
             font-family: "Roboto", sans-serif;
@@ -70,8 +70,9 @@
         #sh {
             background-color:	#DCDCDC;
             width: 90%;
-            height: 160px;
-            left: 15px;
+            min-height: 160px;
+            max-height: auto;
+            margin-left: 15px;
             position: relative;
             border-radius: 5px;
             padding: 8px;
@@ -93,8 +94,6 @@
             font-weight: 500;
         }
 
-        * {box-sizing: border-box}
-
         body {
             font-family: "Lato", sans-serif;
             top: 8%;
@@ -106,7 +105,8 @@
             float: left;
             border: 1px solid #ccc;
             background-color: #f1f1f1;
-            width: 4%;
+            min-width: 4%;
+            max-width: auto;
             height: 100%;
         }
 
@@ -146,15 +146,16 @@
         }
 
         #cont {
-            left: 15px;
+            /* left: 15px; */
             position: relative;
         }
 
         .r8 {
             float: left;
+            margin-left: 15px;
             border-radius: 5px;
             background: #F8F8F8	;
-            width: 200px;
+            width: 220px;
             height: 300px;
             padding: 10px;
             position: relative;
@@ -216,6 +217,15 @@
                     <div class="spyder">
                         <i class="material-icons">account_circle</i>
                         <h5>Blog/Article</h5>
+                        <p>Typically, 400-450 words, an e-book is perfect for your target audience ranging from prospective customers to users</p>
+                        <button class="bt">Order</button>
+                    </div>
+                </div>
+
+                <div class="r8">
+                    <div class="spyder">
+                        <i class="material-icons">account_circle</i>
+                        <h5>Newsletter</h5>
                         <p>Typically, 400-450 words, an e-book is perfect for your target audience ranging from prospective customers to users</p>
                         <button class="bt">Order</button>
                     </div>
