@@ -5,17 +5,44 @@
 
         <!--Material Icons-->
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <header class="site-header">
             <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
                 <div class="container">
                     <a class="navbar-brand mr-6" href="#">whitePanda</a>
+                    <div class="navbar-nav">
+              
+                        <a class="nav-item nav-link notification but" href="#">
+                            <i style="font-size:24px" class="fa">&#xf0f3;</i>
+                            <span class="badge">3</span>
+                        </a>
+                        <a class="nav-item nav-link but" href="#"><i class="material-icons">account_circle</i></a>
+                      
+                    </div>
                 </div>
             </nav>
         </header>
     </head>
 
     <style>
+        .notification {
+            position: relative;
+        }
+
+        /* .fa:hover, .but:hover, i:hover {
+            color: white;
+        } */
+
+.notification .badge {
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
         #bt {
             font-family: "Roboto", sans-serif;
             text-transform: uppercase;
@@ -30,7 +57,7 @@
             cursor: pointer;
         }
 
-        #bt:hover,.form button:active,.form button:focus {
+        #bt:hover, #bt:active, #bt:focus {
             background: #068baf;
         }
 
@@ -56,7 +83,7 @@
             color: #ffffff;
         }
 
-        .site-header .navbar-nav .nav-link:hover {
+        .site-header .navbar-nav {
             color: #05728f;
         }
 
