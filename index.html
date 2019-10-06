@@ -16,10 +16,29 @@
     </head>
 
     <style>
+        #bt {
+            font-family: "Roboto", sans-serif;
+            text-transform: uppercase;
+            outline: 0;
+            background: #05728f;
+            
+            border: 0;
+            padding: 15px;
+            color: #FFFFFF;
+            font-size: 14px;
+            -webkit-transition: all 0.3 ease;
+            transition: all 0.3 ease;
+            cursor: pointer;
+        }
+
+        #bt:hover,.form button:active,.form button:focus {
+            background: #068baf;
+        }
+
         #sh {
           background-color:	#DCDCDC;
           width: 90%;
-          height: 70px;
+          height: 160px;
           left: 15px;
           position: relative;
           border-radius: 5px;
@@ -54,7 +73,7 @@
             float: left;
             border: 1px solid #ccc;
             background-color: #f1f1f1;
-            width: 5%;
+            width: 4%;
             height: 100%;
         }
 
@@ -106,6 +125,9 @@
             <br>
             <div id="sh">
                 <h5>Got bulk orders or almost similar orders? Fill the order brief in an excel sheet</h5>
+                <p>If you're wondering about an easy way to place orders in large numbers, we provide a way customized just for that.<br>
+                Download our excel sheet, and fill the order brief in the prescribed format and submit. In case You need any help, we are just a click away to assist you in placing your order.</p>
+                <button type = "button" id="bt">Order via Excel Sheet</button>
             </div>
         </div>
                   
